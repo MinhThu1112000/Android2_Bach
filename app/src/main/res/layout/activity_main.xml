@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/introduce"
+        android:background="#49B5AB">
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/anhdoanhnhan" />
+
+        <TextView
+            android:id="@id/fullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerInParent="true"
+            android:text="Thomas Schneider"
+            android:textSize="25dp"
+            android:fontFamily="cursive"
+            android:textColor="#000" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fullName"
+            android:text="Photorapher"
+            android:layout_centerInParent="true"
+            android:textColor="#88000000"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/amounts"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/introduce">
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:gravity="center"
+           android:layout_alignParentStart="true"
+           android:padding="5dp">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="26"
+               android:textSize="20dp"
+               android:textColor="#49B5AB" />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Comments"
+               android:layout_marginTop="2dp"
+               />
+
+       </LinearLayout>
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7"
+                android:textSize="20dp"
+                android:textColor="#49B5AB" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Channels"
+                android:layout_marginTop="2dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="48"
+                android:textSize="20dp"
+                android:textColor="#49B5AB" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bookmarks"
+                android:layout_marginTop="2dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/amounts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <RelativeLayout
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginRight="20dp"
+                android:id="@+id/imageView2"
+                android:layout_width="60dp"
+                android:layout_height="120dp"
+                app:srcCompat="@drawable/ic_launcher_background" />
+            <LinearLayout
+                android:layout_toEndOf="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mountains Shot in infrared Look"
+                    android:textColor="#000"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Haunting as All Get-Out"
+                    android:textColor="#000"
+                    android:textSize="15dp"/>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_centerVertical="true"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        app:srcCompat="@android:drawable/btn_star" />
+                    <TextView
+                        android:layout_toEndOf="@+id/imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SPACE.com"
+                        android:layout_centerVertical="true" />
+                    <Button
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="SCIENCE"
+                        android:background="#FAF2F2"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/card2"
+            android:layout_below="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginRight="20dp"
+                android:id="@+id/imageView6"
+                android:layout_width="60dp"
+                android:layout_height="120dp"
+                app:srcCompat="@drawable/ic_launcher_background" />
+            <LinearLayout
+                android:layout_toEndOf="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mountains Shot in infrared Look"
+                    android:textColor="#000"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Haunting as All Get-Out"
+                    android:textColor="#000"
+                    android:textSize="15dp"/>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_centerVertical="true"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        app:srcCompat="@android:drawable/btn_star" />
+                    <TextView
+                        android:layout_toEndOf="@+id/imageView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SPACE.com"
+                        android:layout_centerVertical="true" />
+                    <Button
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="SCIENCE"
+                        android:background="#FAF2F2"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginRight="20dp"
+                android:id="@+id/imageView7"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                app:srcCompat="@drawable/ic_launcher_background" />
+            <LinearLayout
+                android:layout_toEndOf="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mountains Shot in infrared Look"
+                    android:textColor="#000"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Haunting as All Get-Out"
+                    android:textColor="#000"
+                    android:textSize="15dp"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
